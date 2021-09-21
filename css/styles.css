@@ -1,0 +1,243 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --btn-second-color: #ffffff;
+  --body-bgc: #e5e5e5;
+  --bgc-header: #2f303a;
+  --btnc-port: #f5f4fa;
+  --footer-color: #2f303a;
+  --footer-contact: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--btn-second-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+/*header*/
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-navcolor {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.site-navcolor .link.current {
+  color: var(--accent-color);
+}
+.site-navcolor .link {
+  color: var(--title-text-color);
+}
+.site-navcolor .link:hover,
+.site-navcolor .link:focus {
+  color: var(--accent-color);
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.accent {
+  color: var(--primary-text-color);
+}
+
+/*header*/
+.secondheading {
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+/*main*/
+.bgcolorheader {
+  background-color: var(--bgc-header);
+}
+
+.headerdecor {
+  color: var(--btn-second-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: var(--accent-color);
+  color: var(--btn-second-color);
+  font-size: 16px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.decoration {
+  color: var(--primary-text-color);
+}
+
+.text {
+  color: var(--title-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.bgc {
+  background-color: var(--btnc-port);
+}
+
+.teamperson {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+.teamposition {
+  color: var(--title-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+.bgcteam {
+  /*background-color: var(--btn-second-color);*/
+  text-align: center;
+}
+
+/*footer*/
+.footer {
+  background-color: var(--footer-color);
+}
+
+.footeraddress {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--btn-second-color);
+  text-decoration: none;
+}
+
+.footercontackt {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact);
+  text-decoration: none;
+}
+
+.logofooter {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.1;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.accentfooter {
+  color: var(--btn-second-color);
+}
+
+/*portfolio*/
+.btnport {
+  background-color: var(--btnc-port);
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btnport:hover,
+.btnport:focus,
+.currentbtn {
+  background-color: var(--accent-color);
+  color: var(--btn-second-color);
+}
+
+.txt {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  /*line-height: 36px;*/
+}
+
+.txtp {
+  color: var(--title-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.bgcproduct {
+  background-color: var(--btn-second-color);
+  text-align: center;
+}
+
+.txtdecoport {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.address {
+  font-style: inherit;
+}
+.footeraddress:hover {
+  color: var(--accent-color);
+}
+.footercontackt:hover {
+  color: var(--accent-color);
+}
