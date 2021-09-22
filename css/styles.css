@@ -2,22 +2,65 @@
   --primary-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
-  --btn-second-color: #ffffff;
-  --body-bgc: #e5e5e5;
-  --bgc-header: #2f303a;
-  --btnc-port: #f5f4fa;
-  --footer-color: #2f303a;
   --footer-contact: rgba(255, 255, 255, 0.6);
+  --dark-bgc: #2f303a;
+  --white-text-color: #ffffff;
+  --white-bgc-port: #f5f4fa;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+/**,
+*::before,
+*::after {
+  box-sizing: border-box;(inherit)
+}*/
 
 body {
   background-color: var(--btn-second-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.71;
+  font-weight: 400;
+  font-style: normal;
 }
 
+p,
+h1,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.site-nav:not(:last-child) {
+  margin-right: 40px;
+}
 /*header*/
 .list {
   list-style: none;
@@ -29,37 +72,29 @@ body {
 
 .site-nav {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
-}
 .site-nav .link {
   color: var(--primary-text-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.link.current {
   color: var(--accent-color);
 }
 
 .site-navcolor {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
-.site-navcolor .link.current {
-  color: var(--accent-color);
-}
 .site-navcolor .link {
   color: var(--title-text-color);
 }
 .site-navcolor .link:hover,
-.site-navcolor .link:focus {
+.site-navcolor .link:focus,
+.link.current {
   color: var(--accent-color);
 }
 
@@ -83,26 +118,29 @@ body {
   line-height: 1.1;
   font-weight: bold;
   color: var(--primary-text-color);
+  text-align: center;
 }
 
 /*main*/
 .bgcolorheader {
-  background-color: var(--bgc-header);
+  background-color: var(--dark-bgc);
 }
 
 .headerdecor {
-  color: var(--btn-second-color);
+  color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+  height: 600px;
+  padding: 200px;
 }
 
 .btn {
   background: var(--accent-color);
-  color: var(--btn-second-color);
+  color: var(--white-text-color);
   font-size: 16px;
   border-radius: 4px;
   font-family: inherit;
@@ -125,7 +163,7 @@ body {
 }
 
 .bgc {
-  background-color: var(--btnc-port);
+  background-color: var(--white-bgc-port);
 }
 
 .teamperson {
@@ -147,18 +185,51 @@ body {
 .bgcteam {
   /*background-color: var(--btn-second-color);*/
   text-align: center;
+  flex-basis: calc((100% / 4- 30px));
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
+.representiv {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.work-section {
+  flex-basis: calc((100% / 3- 30px));
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.work-product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+/*.characteristic {
+  flex-basis: calc((100% / 4- 30px));
+}
+
+.characteristic-info {
+  display: flex;
+}*/
+
+.chapter {
+  display: flex;
+  margin-left: 373px;
+}
 /*footer*/
 .footer {
-  background-color: var(--footer-color);
+  background-color: var(--dark-bgc);
 }
 
 .footeraddress {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--btn-second-color);
+  color: var(--white-text-color);
   text-decoration: none;
 }
 
@@ -170,22 +241,13 @@ body {
   text-decoration: none;
 }
 
-.logofooter {
-  color: var(--accent-color);
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.1;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
 .accentfooter {
-  color: var(--btn-second-color);
+  color: var(--white-text-color);
 }
 
 /*portfolio*/
 .btnport {
-  background-color: var(--btnc-port);
+  background-color: var(--white-bgc-port);
   color: var(--primary-text-color);
   font-family: inherit;
   font-weight: 500;
@@ -201,7 +263,7 @@ body {
 .btnport:focus,
 .currentbtn {
   background-color: var(--accent-color);
-  color: var(--btn-second-color);
+  color: var(--white-text-color);
 }
 
 .txt {
@@ -218,9 +280,18 @@ body {
   font-family: inherit;
 }
 
+.portfoliowork {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
 .bgcproduct {
-  background-color: var(--btn-second-color);
+  background-color: var(--white-text-color);
   text-align: center;
+  flex-basis: calc((100% / 3- 30px));
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .txtdecoport {
@@ -235,9 +306,19 @@ body {
 .address {
   font-style: inherit;
 }
-.footeraddress:hover {
+.footeraddress:hover,
+.footeraddress:focus {
   color: var(--accent-color);
 }
-.footercontackt:hover {
+.footercontackt:hover,
+.footercontackt:focus {
   color: var(--accent-color);
 }
+
+/* .section{
+    padding-top:94px;
+    padding-buttom: 94px;
+  }
+
+
+}*/

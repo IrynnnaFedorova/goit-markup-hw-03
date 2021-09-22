@@ -9,25 +9,27 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body  class="container">
     <header>
+        <div class="header-container">
         <a class="logo" href="./index.html">Web<span class="accent">Studio</span></a>
         <nav>
-            <ul class="site-nav list">
+            <ul class="site-nav list header-container">
                 <li><a href="./index.html" class="link">Студия</a></li>
                 <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
                 <li><a href="#contacts" class="link">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="site-navcolor list">
+        <ul class="site-navcolor list header-container">
             <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <main>
         <section>
             <h1 hidden>Наше портфолио</h1>
-            <ul class="list">
+            <ul class="list chapter">
             <li><button class="btnport currentbtn" type="button">Все</button></li>
             <li><button class="btnport" type="button">Веб-сайты</button></li>
             <li><button class="btnport" type="button">Приложения</button></li>
@@ -35,7 +37,7 @@
             <li><button class="btnport" type="button">Маркетинг</button></li>
         </ul>
             <h2 hidden>Наши работы</h2>
-            <ul class="list txt">
+            <ul class="list txt portfoliowork">
                 <li class="bgcproduct">
                    <a class="link" href="" target="_blank" rel="noopener noreferrer"><img src="./images/tehnokryak.jpg" alt="веб-сайт Технокряк" width="370" >
                     <h3 class="textdecoport" style="color:#212121;">Технокряк</h3>
@@ -85,7 +87,7 @@
         </section>
         </main>
         <footer class="footer">
-<a class="logofooter" href="/">Web<span class="accentfooter">Studio</span></a>
+<a class="logo" href="/">Web<span class="accentfooter">Studio</span></a>
             <address class="address">
                 <ul class="list">
                     <li><a class="footeraddress" href="">г. Киев, пр-т Леси Украинки, 26</a></li>

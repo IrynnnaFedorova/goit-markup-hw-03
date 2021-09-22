@@ -7,30 +7,33 @@
     <title>Студия</title>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+<body class="container">
     <header>
+        <div class="header-container">
         <a href="./index.html" class="logo">Web<span class="accent">Studio</span></a>
         <nav>
-        <ul class="site-nav list">
+        <ul class="site-nav list header-container">
             <li><a href="./index.html" class="link current">Студия</a></li>
             <li><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li><a href="#contacts" class="link">Контакты</a></li>
         </ul>
         </nav>
-        <ul class="site-navcolor list">
+        <ul class="site-navcolor list header-container">
             <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <main>
-        <section class="bgcolorheader">
+        <section class="bgcolorheader section">
             <h1 class="headerdecor">Эффективные решения для вашего бизнеса</h1>
             <button class="btn" type="button">Заказать услугу</button>
         </section>
-    <section>
-        <ul class="list">
+    <section class="section characteristic-info">
+        <ul class="list characteristic">
             <li>
                 <h3 class="decoration">ВНИМАНИЕ К ДЕТАЛЯМ </h3>
                 <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -49,30 +52,30 @@
             </li>
         </ul>
     </section>
-    <section>
+    <section class="work-section">
         <h2 class="secondheading">Чем мы занимаемся</h2>
-        <ul class="list">
+        <ul class="list work-product">
             <li><img src="./images/frontend.jpg" alt="написание кода" width="370"></li>
             <li><img src="./images/development.jpg" alt="разработка мобильной версии" width="370"></li>
             <li><img src="./images/webdesign.jpg" alt="lразработка дизайна" width="370"></li>
         </ul>
     </section>
-    <section class="bgc">
+    <section class="bgc section">
         <h2 class="secondheading">Наша команда</h2>
-        <ul class="list">
-            <li class="bgcteam"><img src="./images/igordemyanenko.jpg" alt="сотрудник Игорь Демьяненко дизайнер" width="370">
+        <ul class="list representiv">
+            <li class="bgcteam"><img src="./images/igordemyanenko.jpg" alt="сотрудник Игорь Демьяненко дизайнер" width="270">
             <h3 class="teamperson">Игорь Демьяненко</h3>
             <p class="teamposition">Product Designer</p>
             </li>
-            <li class="bgcteam"><img src="./images/olgarepina.jpg" alt="сотрудник Ольга Репина фронт-энд разработчик" width="370">
+            <li class="bgcteam"><img src="./images/olgarepina.jpg" alt="сотрудник Ольга Репина фронт-энд разработчик" width="270">
             <h3 class="teamperson">Ольга Репина</h3>
             <p class="teamposition">Frontend Developer</p>
             </li>
-            <li class="bgcteam"><img src="./images/nikolaytarasov.jpg" alt="сотрудник Николай Тарасов маркетолог" width="370">
+            <li class="bgcteam"><img src="./images/nikolaytarasov.jpg" alt="сотрудник Николай Тарасов маркетолог" width="270">
             <h3 class="teamperson">Николай Тарасов</h3>
             <p class="teamposition">Marketing</p>
             </li>
-            <li class="bgcteam"><img src="./images/mikhailyermakov.jpg" alt="сотрудник Михаил Ермаков дизайнер" width="370">
+            <li class="bgcteam"><img src="./images/mikhailyermakov.jpg" alt="сотрудник Михаил Ермаков дизайнер" width="270">
             <h3 class="teamperson">Михаил Ермаков</h3>
             <p class="teamposition">UI Designer</p>
             </li>
@@ -80,7 +83,7 @@
     </section>
     </main>
     <footer class="footer">
-        <a class="logofooter" href="/">Web<span class="accentfooter">Studio</span></a>
+        <a class="logo" href="/">Web<span class="accentfooter">Studio</span></a>
         <address class="address">
             <ul class="list">
                 <li><a class="footeraddress" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
