@@ -164,7 +164,7 @@ img {
   text-decoration: none;
   letter-spacing: 0.03em;
   padding-right: 93px;
-  padding-left: 215px;
+  /*padding-left: 215px;*/
   padding-top:24px;
   padding-bottom:25px;
 }
@@ -420,7 +420,7 @@ background: var(--white-text-color);
 .address {
   font-style: inherit;
   padding-right: 93px;
-  padding-left: 215px;
+  /*padding-left: 215px;*/
 }
 .footeraddress:hover,
 .footeraddress:focus {
