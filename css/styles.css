@@ -100,12 +100,13 @@ img {
   text-decoration: none;
 }
 
-.main-nav {
+/*.main-nav {
   display: inline-flex;
   align-items: center;
-}
+}*/
 
 .site-nav {
+  display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -261,9 +262,10 @@ img {
   /*margin-bottom: 94px;*/
 }
 
-/*.characteristic {
-  flex-basis: calc((100% / 4- 30px));
-}*/
+.characteristic {
+  /*flex-basis: calc((100% / 4- 30px));*/
+  display: flex;
+}
 
 .characteristic-info {
   display: flex;
