@@ -32,7 +32,7 @@ aside {
   display: block;
 }
 
-/*.visually-hidden {
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -40,8 +40,8 @@ aside {
   padding: 0;
   overflow: hidden;
   border: 0;
-  clip: rect(0 0 0 0)
-}*/
+  clip: rect(0 0 0 0);
+}
 
 body {
   background-color: var(--btn-second-color);
@@ -116,7 +116,7 @@ img {
   display: block;
 }
 
-.header-page .header {
+.page-header {
   border-bottom: 1px solid var(--border-portfoli);
 }
 
@@ -351,6 +351,10 @@ img {
   display: inline;
 }*/
 
+.chapter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .chapter {
   display: flex;
   /*margin-left: 373px;*/
@@ -399,7 +403,7 @@ img {
   border: none;
   cursor: pointer;
   padding: 6px 22px;
-  margin-right: 8px;
+  /*margin-right: 8px;*/
 }
 
 .btnport:hover,
@@ -407,6 +411,8 @@ img {
 .currentbtn {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .txt {
@@ -428,6 +434,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
   /*outline: 1px solid var(--border-portfoli);*/
   padding: 0px;
   /*margin-bottom: 94px;*/
@@ -440,8 +447,14 @@ img {
   /*margin-top: 30px;*/
   margin-left: 30px;
   margin-top: 30px;
-  outline: 1px solid var(--border-portfoli);
-  padding-bottom: 20px;
+  /*outline: 1px solid var(--border-portfoli);*/
+  /*padding-bottom: 20px;*/
+}
+
+.bgsproduct-content {
+  /*padding: 20px 24px;*/
+  padding: 20px 0px 20px 24px;
+  border: 1px solid var(--border-portfoli);
 }
 
 .txtdecoport {
@@ -454,8 +467,9 @@ img {
 }
 
 .textdecoport {
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-bottom: 4px;
+  /*padding-top: 20px;
+  padding-left: 24px;*/
 }
 
 .address {
@@ -487,21 +501,21 @@ img {
   padding-bottom: 94px;
 }
 
-.line-container {
+/*.line-container {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid #ececec;
-}
+}*/
 
 /*.chapter:not(:last-child) {
     padding-right: 8px;
 }*/
 
-.border {
+/*.border {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
-}
+}*/
 
 /*.header-blok {
   text-align: center;
