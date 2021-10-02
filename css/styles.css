@@ -55,7 +55,7 @@ body {
 
 p,
 h1,
-h1,
+h2,
 h3,
 h4,
 h5,
@@ -333,7 +333,7 @@ img {
 }
 
 .work-product-item {
-  width: calc(100% / 3- 30px);
+  width: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
